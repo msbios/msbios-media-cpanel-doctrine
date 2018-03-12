@@ -85,7 +85,7 @@ $this->headScript()
                         <?php /** @var \MSBios\Media\Resource\Doctrine\Entity\News $item */ ?>
                         <?php foreach ($this->paginator as $item): ?>
                             <tr>
-                                <td><?= $this->truncate($this->escapeHtml($item->getTitle()), 50); ?></td>
+                                <td><?= $this->truncate($this->escapeHtml($item->getTitle()), 125); ?></td>
                                 <td>
                                     <?= $this->dateFormat(
                                         $item->getPostdate(),
