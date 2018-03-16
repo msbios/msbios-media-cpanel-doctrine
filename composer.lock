@@ -3542,16 +3542,16 @@
         },
         {
             "name": "msbios/media-resource-doctrine",
-            "version": "v1.0.14",
+            "version": "v1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-media-resource-doctrine.git",
-                "reference": "c7f97ffb81927f7577c52aaae1897abebfd77813"
+                "reference": "37d2db10914747842f0a19c91a24273feef15017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-media-resource-doctrine/zipball/c7f97ffb81927f7577c52aaae1897abebfd77813",
-                "reference": "c7f97ffb81927f7577c52aaae1897abebfd77813",
+                "url": "https://api.github.com/repos/msbios/msbios-media-resource-doctrine/zipball/37d2db10914747842f0a19c91a24273feef15017",
+                "reference": "37d2db10914747842f0a19c91a24273feef15017",
                 "shasum": ""
             },
             "require-dev": {
@@ -3590,7 +3590,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-15T09:46:52+00:00"
+            "time": "2018-03-16T12:52:26+00:00"
         },
         {
             "name": "msbios/monolog",

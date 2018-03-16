@@ -93,9 +93,10 @@ $form->prepare();
 
                         <?php foreach ($options->get('images') as $i => $image): ?>
                             <div class="col-md-2 ms-image-item" data-item-index="<?= $i; ?>">
+                                <?php $thumb = $image->get('thumb'); ?>
                                 <div class="thumbnail">
                                     <div class="thumb">
-                                        <img src="http://via.placeholder.com/360x270">
+                                        <img src="<?= $thumb->get('src')->getValue(); ?>">
                                         <div class="caption-overflow">
                                             <span>
                                                 <a href="#"
@@ -118,7 +119,6 @@ $form->prepare();
                                 <?= $this->formElement($image->get('src')); ?>
                                 <?= $this->formElement($image->get('size')); ?>
                                 <?= $this->formElement($image->get('error')); ?>
-                                <?php $thumb = $image->get('thumb'); ?>
                                 <?= $this->formElement($thumb->get('width')); ?>
                                 <?= $this->formElement($thumb->get('height')); ?>
                                 <?= $this->formElement($thumb->get('src')); ?>
