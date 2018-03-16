@@ -19,6 +19,21 @@ use Zend\Filter\FilterChain;
  */
 class NewsImageChain extends FilterChain
 {
+    /** @var string */
+    protected $pathname = './public/uploads/';
+
+    /** @var int */
+    protected $resizeWidth = 480;
+
+    /** @var int */
+    protected $resizeHeight = 320;
+
+    /** @var int */
+    protected $thumbWidth = 320;
+
+    /** @var int */
+    protected $thumbHeight = 270;
+
     /**
      * NewsImageChain constructor.
      * @param ImagineInterface $imagine
@@ -29,7 +44,7 @@ class NewsImageChain extends FilterChain
 
         $this->attach(new RenameUpload([
             'target' => [
-                'pathname' => './public/uploads/',
+                'pathname' => $this->pathname,
                 'depth' => 4,
                 'length' => 2,
                 'camel_case' => false
@@ -41,7 +56,7 @@ class NewsImageChain extends FilterChain
         ]))->attach(new Callback(function ($params) use ($imagine) {
 
             /** @var BoxInterface $size */
-            $size = new Box(480, 320);
+            $size = new Box($this->resizeWidth, $this->resizeHeight);
 
             $imagine->open($params['tmp_name'])
                 ->resize($size, ImageInterface::FILTER_UNDEFINED)
@@ -51,7 +66,6 @@ class NewsImageChain extends FilterChain
             $params['height'] = $size->getHeight();
 
             return $params;
-
         }))->attach(new Callback(function ($params) use ($imagine) {
 
             /** @var array $pathinfo */
@@ -61,7 +75,7 @@ class NewsImageChain extends FilterChain
             $targetDir = $pathinfo['dirname']
                 . DIRECTORY_SEPARATOR . 'thumb';
 
-            if (!is_dir($targetDir)) {
+            if (! is_dir($targetDir)) {
                 mkdir($targetDir, 0777, true);
             }
 
@@ -70,7 +84,7 @@ class NewsImageChain extends FilterChain
                 . DIRECTORY_SEPARATOR . $pathinfo['basename'];
 
             /** @var BoxInterface $size */
-            $size = new Box(320, 270);
+            $size = new Box($this->thumbWidth, $this->thumbHeight);
 
             /** @var ImageInterface $image */
             $image = $imagine->open($params['tmp_name'])
@@ -87,7 +101,6 @@ class NewsImageChain extends FilterChain
             ];
 
             return $params;
-
         }));
     }
 }

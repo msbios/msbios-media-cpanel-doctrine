@@ -5,7 +5,6 @@
  */
 namespace MSBios\Media\CPanel\Doctrine\Factory;
 
-
 use Interop\Container\ContainerInterface;
 use Interop\Container\Exception\ContainerException;
 use MSBios\Imagine\ImaginePluginManagerInterface;
