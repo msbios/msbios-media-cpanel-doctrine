@@ -9,7 +9,9 @@ namespace MSBios\Media\CPanel\Doctrine;
 $this->headScript()
     ->appendFile($this->basePath('limitless/assets/js/plugins/forms/styling/switch.min.js'))
     ->appendFile($this->basePath('limitless/assets/js/plugins/forms/styling/switchery.min.js'))
-    ->appendFile($this->basePath('limitless/assets/js/plugins/forms/styling/uniform.min.js'));
+    ->appendFile($this->basePath('limitless/assets/js/plugins/forms/styling/uniform.min.js'))
+    ->appendFile($this->basePath('limitless/assets/js/plugins/forms/styling/uniform.min.js'))
+;
 ?>
 
 <div class="row">
@@ -72,6 +74,7 @@ $this->headScript()
                         <thead>
                         <tr>
                             <th><?= $this->translate('Title'); ?></th>
+                            <th class="text-center"><?= $this->translate('Type'); ?></th>
                             <th><?= $this->translate('Postdate'); ?></th>
                             <th><?= $this->translate('Creator'); ?></th>
                             <th><?= $this->translate('Created At'); ?></th>
@@ -86,6 +89,11 @@ $this->headScript()
                         <?php foreach ($this->paginator as $item): ?>
                             <tr>
                                 <td><?= $this->truncate($this->escapeHtml($item->getTitle()), 125); ?></td>
+                                <td class="text-center">
+                                    <span class="label label-success">
+                                        <?= $this->escapeHtml($item->getType()); ?>
+                                    </span>
+                                </td>
                                 <td>
                                     <?= $this->dateFormat(
                                         $item->getPostdate(),

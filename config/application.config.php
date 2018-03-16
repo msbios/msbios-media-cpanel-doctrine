@@ -6,6 +6,9 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+        'MSBios\Filter',
+        'MSBios\Imagine',
+        'MSBios\InputFilter',
         'MSBios\Hydrator',
         'MSBios\Media\Resource\Doctrine',
         'MSBios\Guard\Doctrine',

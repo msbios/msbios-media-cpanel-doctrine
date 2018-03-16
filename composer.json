@@ -24,7 +24,8 @@
     }
   },
   "require": {
-
+    "msbios/inputfilter": "^1.0",
+    "msbios/filter": "^1.0"
   },
   "require-dev": {
     "msbios/portal-doctrine": "^1.0",

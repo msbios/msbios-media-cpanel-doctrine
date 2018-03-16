@@ -4,8 +4,959 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0aa99f6f339ee090f36c22c781a090b8",
-    "packages": [],
+    "content-hash": "b4585b5e439febd826eb1ec0b589c332",
+    "packages": [
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "homepage": "https://github.com/container-interop/container-interop",
+            "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "imagine/imagine",
+            "version": "v0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avalanche123/Imagine.git",
+                "reference": "a9a702a946073cbca166718f1b02a1e72d742daa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/a9a702a946073cbca166718f1b02a1e72d742daa",
+                "reference": "a9a702a946073cbca166718f1b02a1e72d742daa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "sami/sami": "^3.3",
+                "symfony/phpunit-bridge": "^3.2"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD implementation",
+                "ext-gmagick": "to use the Gmagick implementation",
+                "ext-imagick": "to use the Imagick implementation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Imagine": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bulat Shakirzyanov",
+                    "email": "mallluhuct@gmail.com",
+                    "homepage": "http://avalanche123.com"
+                }
+            ],
+            "description": "Image processing for PHP 5.3",
+            "homepage": "http://imagine.readthedocs.org/",
+            "keywords": [
+                "drawing",
+                "graphics",
+                "image manipulation",
+                "image processing"
+            ],
+            "time": "2017-05-16T10:31:22+00:00"
+        },
+        {
+            "name": "msbios/filter",
+            "version": "v1.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-filter.git",
+                "reference": "093a0ac63015354846cb0d0abb60f8e0a5187bf5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-filter/zipball/093a0ac63015354846cb0d0abb60f8e0a5187bf5",
+                "reference": "093a0ac63015354846cb0d0abb60f8e0a5187bf5",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/imagine": "^1.0",
+                "msbios/json": "^1.0",
+                "zendframework/zend-filter": "^2.7"
+            },
+            "require-dev": {
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Filter",
+                    "config-provider": "MSBios\\Filter\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Filter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Filter",
+            "homepage": "https://github.com/msbios/msbios-filter",
+            "keywords": [
+                "php"
+            ],
+            "time": "2018-03-16T08:57:33+00:00"
+        },
+        {
+            "name": "msbios/imagine",
+            "version": "v1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-imagine.git",
+                "reference": "a3010c4f8b21c88b9371fd6e4c6eab90ec0dee76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-imagine/zipball/a3010c4f8b21c88b9371fd6e4c6eab90ec0dee76",
+                "reference": "a3010c4f8b21c88b9371fd6e4c6eab90ec0dee76",
+                "shasum": ""
+            },
+            "require": {
+                "imagine/imagine": "^0.7",
+                "msbios/msbios": "^1.0"
+            },
+            "require-dev": {
+                "msbios/test": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Imagine"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Imagine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Imagine",
+            "homepage": "https://github.com/msbios/msbios-imagine",
+            "keywords": [
+                "php"
+            ],
+            "time": "2018-03-16T10:29:54+00:00"
+        },
+        {
+            "name": "msbios/inputfilter",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-inputfilter.git",
+                "reference": "1bdf04586aa8aaf2b83ec919065ae5f317c97027"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-inputfilter/zipball/1bdf04586aa8aaf2b83ec919065ae5f317c97027",
+                "reference": "1bdf04586aa8aaf2b83ec919065ae5f317c97027",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/msbios": "^1.0",
+                "zendframework/zend-inputfilter": "^2.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\InputFilter"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\InputFilter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios InputFilter",
+            "homepage": "https://github.com/msbios/msbios-inputfilter",
+            "keywords": [
+                "php"
+            ],
+            "time": "2018-01-24T11:41:33+00:00"
+        },
+        {
+            "name": "msbios/json",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-json.git",
+                "reference": "360d4a52327dbf9b729497820aae903380027f8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-json/zipball/360d4a52327dbf9b729497820aae903380027f8a",
+                "reference": "360d4a52327dbf9b729497820aae903380027f8a",
+                "shasum": ""
+            },
+            "require": {
+                "msbios/msbios": "^1.0",
+                "zendframework/zend-json": "^3.0",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-modulemanager": "^2.8",
+                "zendframework/zend-servicemanager": "^3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.0",
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\Json\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Json",
+            "homepage": "https://github.com/msbios/msbios-json",
+            "keywords": [
+                "php"
+            ],
+            "time": "2017-09-11T14:56:35+00:00"
+        },
+        {
+            "name": "msbios/msbios",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/msbios/msbios-msbios.git",
+                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/3db910564d610ee2a0a737cbc94089bc933ef759",
+                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-modulemanager": "^2.8"
+            },
+            "require-dev": {
+                "msbios/test": "^1.0"
+            },
+            "bin": [
+                "bin/msbios.sh"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MSBios\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Judzhin Miles",
+                    "email": "info@msbios.com"
+                }
+            ],
+            "description": "MSBios Library",
+            "homepage": "https://github.com/msbios/msbios",
+            "keywords": [
+                "php"
+            ],
+            "time": "2018-03-07T10:56:01+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "zendframework/zend-config",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-config.git",
+                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-config/zipball/a12e4a592bf66d9629b84960e268f3752e53abe4",
+                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^5.6 || ^7.0",
+                "psr/container": "^1.0",
+                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
+            },
+            "conflict": {
+                "container-interop/container-interop": "<1.2.0"
+            },
+            "require-dev": {
+                "malukenho/docheader": "^0.1.5",
+                "phpunit/phpunit": "^5.7 || ^6.0",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-filter": "^2.7.1",
+                "zendframework/zend-i18n": "^2.7.3",
+                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1"
+            },
+            "suggest": {
+                "zendframework/zend-filter": "^2.7.1; install if you want to use the Filter processor",
+                "zendframework/zend-i18n": "^2.7.3; install if you want to use the Translator processor",
+                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1; if you need an extensible plugin manager for use with the Config Factory"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Config\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a nested object property based user interface for accessing this configuration data within application code",
+            "homepage": "https://github.com/zendframework/zend-config",
+            "keywords": [
+                "config",
+                "zf2"
+            ],
+            "time": "2017-02-22T14:31:10+00:00"
+        },
+        {
+            "name": "zendframework/zend-eventmanager",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-eventmanager.git",
+                "reference": "9d72db10ceb6e42fb92350c0cb54460da61bd79c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/9d72db10ceb6e42fb92350c0cb54460da61bd79c",
+                "reference": "9d72db10ceb6e42fb92350c0cb54460da61bd79c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "^0.1",
+                "container-interop/container-interop": "^1.1.0",
+                "phpunit/phpunit": "^6.0.7 || ^5.7.14",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-stdlib": "^2.7.3 || ^3.0"
+            },
+            "suggest": {
+                "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
+                "zendframework/zend-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev",
+                    "dev-develop": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\EventManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Trigger and listen to events within a PHP application",
+            "homepage": "https://github.com/zendframework/zend-eventmanager",
+            "keywords": [
+                "event",
+                "eventmanager",
+                "events",
+                "zf2"
+            ],
+            "time": "2017-07-11T19:17:22+00:00"
+        },
+        {
+            "name": "zendframework/zend-filter",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-filter.git",
+                "reference": "b8d0ff872f126631bf63a932e33aa2d22d467175"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-filter/zipball/b8d0ff872f126631bf63a932e33aa2d22d467175",
+                "reference": "b8d0ff872f126631bf63a932e33aa2d22d467175",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5 || ^7.0",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+            },
+            "require-dev": {
+                "pear/archive_tar": "^1.4",
+                "phpunit/phpunit": "^6.0.10 || ^5.7.17",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-crypt": "^2.6 || ^3.0",
+                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
+                "zendframework/zend-uri": "^2.5"
+            },
+            "suggest": {
+                "zendframework/zend-crypt": "Zend\\Crypt component, for encryption filters",
+                "zendframework/zend-i18n": "Zend\\I18n component for filters depending on i18n functionality",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager component, for using the filter chain functionality",
+                "zendframework/zend-uri": "Zend\\Uri component, for the UriNormalize filter"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev",
+                    "dev-develop": "2.8-dev"
+                },
+                "zf": {
+                    "component": "Zend\\Filter",
+                    "config-provider": "Zend\\Filter\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Filter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a set of commonly needed data filters",
+            "homepage": "https://github.com/zendframework/zend-filter",
+            "keywords": [
+                "filter",
+                "zf2"
+            ],
+            "time": "2017-05-17T20:56:17+00:00"
+        },
+        {
+            "name": "zendframework/zend-inputfilter",
+            "version": "2.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-inputfilter.git",
+                "reference": "55d1430db559e9781b147e73c2c0ce6635d8efe2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-inputfilter/zipball/55d1430db559e9781b147e73c2c0ce6635d8efe2",
+                "reference": "55d1430db559e9781b147e73c2c0ce6635d8efe2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-filter": "^2.6",
+                "zendframework/zend-servicemanager": "^2.7.10 || ^3.3.1",
+                "zendframework/zend-stdlib": "^2.7 || ^3.0",
+                "zendframework/zend-validator": "^2.10.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.23 || ^6.4.3",
+                "zendframework/zend-coding-standard": "~1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev",
+                    "dev-develop": "2.9.x-dev"
+                },
+                "zf": {
+                    "component": "Zend\\InputFilter",
+                    "config-provider": "Zend\\InputFilter\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\InputFilter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Normalize and validate input sets from the web, APIs, the CLI, and more, including files",
+            "keywords": [
+                "ZendFramework",
+                "inputfilter",
+                "zf"
+            ],
+            "time": "2018-01-22T19:41:18+00:00"
+        },
+        {
+            "name": "zendframework/zend-json",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-json.git",
+                "reference": "4dd940e8e6f32f1d36ea6b0677ea57c540c7c19c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-json/zipball/4dd940e8e6f32f1d36ea6b0677ea57c540c7c19c",
+                "reference": "4dd940e8e6f32f1d36ea6b0677ea57c540c7c19c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.23 || ^6.4.3",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
+            },
+            "suggest": {
+                "zendframework/zend-json-server": "For implementing JSON-RPC servers",
+                "zendframework/zend-xml2json": "For converting XML documents to JSON"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev",
+                    "dev-develop": "3.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Json\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides convenience methods for serializing native PHP to JSON and decoding JSON to native PHP",
+            "keywords": [
+                "ZendFramework",
+                "json",
+                "zf"
+            ],
+            "time": "2018-01-04T17:51:34+00:00"
+        },
+        {
+            "name": "zendframework/zend-loader",
+            "version": "2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-loader.git",
+                "reference": "c5fd2f071bde071f4363def7dea8dec7393e135c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-loader/zipball/c5fd2f071bde071f4363def7dea8dec7393e135c",
+                "reference": "c5fd2f071bde071f4363def7dea8dec7393e135c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.23"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.7.*",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev",
+                    "dev-develop": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Loader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-loader",
+            "keywords": [
+                "loader",
+                "zf2"
+            ],
+            "time": "2015-06-03T14:05:47+00:00"
+        },
+        {
+            "name": "zendframework/zend-modulemanager",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-modulemanager.git",
+                "reference": "394df6e12248ac430a312d4693f793ee7120baa6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-modulemanager/zipball/394df6e12248ac430a312d4693f793ee7120baa6",
+                "reference": "394df6e12248ac430a312d4693f793ee7120baa6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-config": "^3.1 || ^2.6",
+                "zendframework/zend-eventmanager": "^3.2 || ^2.6.3",
+                "zendframework/zend-stdlib": "^3.1 || ^2.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-console": "^2.6",
+                "zendframework/zend-di": "^2.6",
+                "zendframework/zend-loader": "^2.5",
+                "zendframework/zend-mvc": "^3.0 || ^2.7",
+                "zendframework/zend-servicemanager": "^3.0.3 || ^2.7.5"
+            },
+            "suggest": {
+                "zendframework/zend-console": "Zend\\Console component",
+                "zendframework/zend-loader": "Zend\\Loader component if you are not using Composer autoloading for your modules",
+                "zendframework/zend-mvc": "Zend\\Mvc component",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager component"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev",
+                    "dev-develop": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\ModuleManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Modular application system for zend-mvc applications",
+            "homepage": "https://github.com/zendframework/zend-modulemanager",
+            "keywords": [
+                "ZendFramework",
+                "modulemanager",
+                "zf"
+            ],
+            "time": "2017-12-02T06:11:18+00:00"
+        },
+        {
+            "name": "zendframework/zend-servicemanager",
+            "version": "3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-servicemanager.git",
+                "reference": "9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-servicemanager/zipball/9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42",
+                "reference": "9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.2",
+                "php": "^5.6 || ^7.0",
+                "psr/container": "^1.0",
+                "zendframework/zend-stdlib": "^3.1"
+            },
+            "provide": {
+                "container-interop/container-interop-implementation": "^1.2",
+                "psr/container-implementation": "^1.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6.5",
+                "ocramius/proxy-manager": "^1.0 || ^2.0",
+                "phpbench/phpbench": "^0.13.0",
+                "phpunit/phpunit": "^5.7.25 || ^6.4.4",
+                "zendframework/zend-coding-standard": "~1.0.0"
+            },
+            "suggest": {
+                "ocramius/proxy-manager": "ProxyManager 1.* to handle lazy initialization of services",
+                "zendframework/zend-stdlib": "zend-stdlib ^2.5 if you wish to use the MergeReplaceKey or MergeRemoveKey features in Config instances"
+            },
+            "bin": [
+                "bin/generate-deps-for-config-factory",
+                "bin/generate-factory-for-class"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev",
+                    "dev-develop": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\ServiceManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Factory-Driven Dependency Injection Container",
+            "keywords": [
+                "PSR-11",
+                "ZendFramework",
+                "dependency-injection",
+                "di",
+                "dic",
+                "service-manager",
+                "servicemanager",
+                "zf"
+            ],
+            "time": "2018-01-29T16:48:37+00:00"
+        },
+        {
+            "name": "zendframework/zend-stdlib",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-stdlib.git",
+                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/debedcfc373a293f9250cc9aa03cf121428c8e78",
+                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "^2.6.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev",
+                    "dev-develop": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "homepage": "https://github.com/zendframework/zend-stdlib",
+            "keywords": [
+                "stdlib",
+                "zf2"
+            ],
+            "time": "2016-09-13T14:38:50+00:00"
+        },
+        {
+            "name": "zendframework/zend-validator",
+            "version": "2.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-validator.git",
+                "reference": "38109ed7d8e46cfa71bccbe7e6ca80cdd035f8c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/38109ed7d8e46cfa71bccbe7e6ca80cdd035f8c9",
+                "reference": "38109ed7d8e46cfa71bccbe7e6ca80cdd035f8c9",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "php": "^5.6 || ^7.0",
+                "zendframework/zend-stdlib": "^2.7.6 || ^3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
+                "zendframework/zend-cache": "^2.6.1",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-config": "^2.6",
+                "zendframework/zend-db": "^2.7",
+                "zendframework/zend-filter": "^2.6",
+                "zendframework/zend-http": "^2.5.4",
+                "zendframework/zend-i18n": "^2.6",
+                "zendframework/zend-math": "^2.6",
+                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
+                "zendframework/zend-session": "^2.8",
+                "zendframework/zend-uri": "^2.5"
+            },
+            "suggest": {
+                "zendframework/zend-db": "Zend\\Db component, required by the (No)RecordExists validator",
+                "zendframework/zend-filter": "Zend\\Filter component, required by the Digits validator",
+                "zendframework/zend-i18n": "Zend\\I18n component to allow translation of validation error messages",
+                "zendframework/zend-i18n-resources": "Translations of validator messages",
+                "zendframework/zend-math": "Zend\\Math component, required by the Csrf validator",
+                "zendframework/zend-servicemanager": "Zend\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
+                "zendframework/zend-session": "Zend\\Session component, ^2.8; required by the Csrf validator",
+                "zendframework/zend-uri": "Zend\\Uri component, required by the Uri and Sitemap\\Loc validators"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.10.x-dev",
+                    "dev-develop": "2.11.x-dev"
+                },
+                "zf": {
+                    "component": "Zend\\Validator",
+                    "config-provider": "Zend\\Validator\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides a set of commonly needed validators",
+            "homepage": "https://github.com/zendframework/zend-validator",
+            "keywords": [
+                "validator",
+                "zf2"
+            ],
+            "time": "2018-02-01T17:05:33+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "behat/transliterator",
@@ -98,37 +1049,6 @@
                 "result-printer"
             ],
             "time": "2018-01-24T00:13:26+00:00"
-        },
-        {
-            "name": "container-interop/container-interop",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/container-interop/container-interop.git",
-                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
-                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
-                "shasum": ""
-            },
-            "require": {
-                "psr/container": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Interop\\Container\\": "src/Interop/Container/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
-            "homepage": "https://github.com/container-interop/container-interop",
-            "time": "2017-02-14T19:40:03+00:00"
         },
         {
             "name": "digitalnature/php-ref",
@@ -2571,66 +3491,17 @@
             "time": "2018-01-16T08:56:53+00:00"
         },
         {
-            "name": "msbios/json",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/msbios/msbios-json.git",
-                "reference": "360d4a52327dbf9b729497820aae903380027f8a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-json/zipball/360d4a52327dbf9b729497820aae903380027f8a",
-                "reference": "360d4a52327dbf9b729497820aae903380027f8a",
-                "shasum": ""
-            },
-            "require": {
-                "msbios/msbios": "^1.0",
-                "zendframework/zend-json": "^3.0",
-                "zendframework/zend-loader": "^2.5",
-                "zendframework/zend-modulemanager": "^2.8",
-                "zendframework/zend-servicemanager": "^3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.0",
-                "zendframework/zend-test": "^3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MSBios\\Json\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL"
-            ],
-            "authors": [
-                {
-                    "name": "Judzhin Miles",
-                    "email": "info@msbios.com"
-                }
-            ],
-            "description": "MSBios Json",
-            "homepage": "https://github.com/msbios/msbios-json",
-            "keywords": [
-                "php"
-            ],
-            "time": "2017-09-11T14:56:35+00:00"
-        },
-        {
             "name": "msbios/media-doctrine",
-            "version": "v1.0.1",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-media-doctrine.git",
-                "reference": "5ba5a0eac1f5be19ee2a73f0ab59404826992308"
+                "reference": "e2bd3e1ecae85a7d0b7bcb5fdafa307784e7e436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-media-doctrine/zipball/5ba5a0eac1f5be19ee2a73f0ab59404826992308",
-                "reference": "5ba5a0eac1f5be19ee2a73f0ab59404826992308",
+                "url": "https://api.github.com/repos/msbios/msbios-media-doctrine/zipball/e2bd3e1ecae85a7d0b7bcb5fdafa307784e7e436",
+                "reference": "e2bd3e1ecae85a7d0b7bcb5fdafa307784e7e436",
                 "shasum": ""
             },
             "require": {
@@ -2667,20 +3538,20 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-12T13:33:30+00:00"
+            "time": "2018-03-13T14:20:46+00:00"
         },
         {
             "name": "msbios/media-resource-doctrine",
-            "version": "v1.0.12",
+            "version": "v1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-media-resource-doctrine.git",
-                "reference": "329b881dcdec98e1333aa419d8ffaf25ab390fb4"
+                "reference": "c7f97ffb81927f7577c52aaae1897abebfd77813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-media-resource-doctrine/zipball/329b881dcdec98e1333aa419d8ffaf25ab390fb4",
-                "reference": "329b881dcdec98e1333aa419d8ffaf25ab390fb4",
+                "url": "https://api.github.com/repos/msbios/msbios-media-resource-doctrine/zipball/c7f97ffb81927f7577c52aaae1897abebfd77813",
+                "reference": "c7f97ffb81927f7577c52aaae1897abebfd77813",
                 "shasum": ""
             },
             "require-dev": {
@@ -2719,7 +3590,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-12T13:27:02+00:00"
+            "time": "2018-03-15T09:46:52+00:00"
         },
         {
             "name": "msbios/monolog",
@@ -2766,53 +3637,6 @@
                 "php"
             ],
             "time": "2017-12-06T09:04:49+00:00"
-        },
-        {
-            "name": "msbios/msbios",
-            "version": "v1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/msbios/msbios-msbios.git",
-                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/3db910564d610ee2a0a737cbc94089bc933ef759",
-                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759",
-                "shasum": ""
-            },
-            "require": {
-                "zendframework/zend-loader": "^2.5",
-                "zendframework/zend-modulemanager": "^2.8"
-            },
-            "require-dev": {
-                "msbios/test": "^1.0"
-            },
-            "bin": [
-                "bin/msbios.sh"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MSBios\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Judzhin Miles",
-                    "email": "info@msbios.com"
-                }
-            ],
-            "description": "MSBios Library",
-            "homepage": "https://github.com/msbios/msbios",
-            "keywords": [
-                "php"
-            ],
-            "time": "2018-03-07T10:56:01+00:00"
         },
         {
             "name": "msbios/navigation",
@@ -4082,55 +4906,6 @@
             "time": "2017-06-30T09:13:00+00:00"
         },
         {
-            "name": "psr/container",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Container\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common Container Interface (PHP FIG PSR-11)",
-            "homepage": "https://github.com/php-fig/container",
-            "keywords": [
-                "PSR-11",
-                "container",
-                "container-interface",
-                "container-interop",
-                "psr"
-            ],
-            "time": "2017-02-14T16:28:37+00:00"
-        },
-        {
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -5390,66 +6165,6 @@
             "time": "2018-01-11T15:03:06+00:00"
         },
         {
-            "name": "zendframework/zend-config",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-config.git",
-                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-config/zipball/a12e4a592bf66d9629b84960e268f3752e53abe4",
-                "reference": "a12e4a592bf66d9629b84960e268f3752e53abe4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^5.6 || ^7.0",
-                "psr/container": "^1.0",
-                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
-            },
-            "conflict": {
-                "container-interop/container-interop": "<1.2.0"
-            },
-            "require-dev": {
-                "malukenho/docheader": "^0.1.5",
-                "phpunit/phpunit": "^5.7 || ^6.0",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-filter": "^2.7.1",
-                "zendframework/zend-i18n": "^2.7.3",
-                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1"
-            },
-            "suggest": {
-                "zendframework/zend-filter": "^2.7.1; install if you want to use the Filter processor",
-                "zendframework/zend-i18n": "^2.7.3; install if you want to use the Translator processor",
-                "zendframework/zend-servicemanager": "^2.7.8 || ^3.2.1; if you need an extensible plugin manager for use with the Config Factory"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Config\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "provides a nested object property based user interface for accessing this configuration data within application code",
-            "homepage": "https://github.com/zendframework/zend-config",
-            "keywords": [
-                "config",
-                "zf2"
-            ],
-            "time": "2017-02-22T14:31:10+00:00"
-        },
-        {
             "name": "zendframework/zend-console",
             "version": "2.7.0",
             "source": {
@@ -5827,120 +6542,6 @@
             "time": "2016-06-30T19:48:38+00:00"
         },
         {
-            "name": "zendframework/zend-eventmanager",
-            "version": "3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-eventmanager.git",
-                "reference": "9d72db10ceb6e42fb92350c0cb54460da61bd79c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-eventmanager/zipball/9d72db10ceb6e42fb92350c0cb54460da61bd79c",
-                "reference": "9d72db10ceb6e42fb92350c0cb54460da61bd79c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "athletic/athletic": "^0.1",
-                "container-interop/container-interop": "^1.1.0",
-                "phpunit/phpunit": "^6.0.7 || ^5.7.14",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-stdlib": "^2.7.3 || ^3.0"
-            },
-            "suggest": {
-                "container-interop/container-interop": "^1.1.0, to use the lazy listeners feature",
-                "zendframework/zend-stdlib": "^2.7.3 || ^3.0, to use the FilterChain feature"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev",
-                    "dev-develop": "3.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\EventManager\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Trigger and listen to events within a PHP application",
-            "homepage": "https://github.com/zendframework/zend-eventmanager",
-            "keywords": [
-                "event",
-                "eventmanager",
-                "events",
-                "zf2"
-            ],
-            "time": "2017-07-11T19:17:22+00:00"
-        },
-        {
-            "name": "zendframework/zend-filter",
-            "version": "2.7.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-filter.git",
-                "reference": "b8d0ff872f126631bf63a932e33aa2d22d467175"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-filter/zipball/b8d0ff872f126631bf63a932e33aa2d22d467175",
-                "reference": "b8d0ff872f126631bf63a932e33aa2d22d467175",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5 || ^7.0",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0"
-            },
-            "require-dev": {
-                "pear/archive_tar": "^1.4",
-                "phpunit/phpunit": "^6.0.10 || ^5.7.17",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-crypt": "^2.6 || ^3.0",
-                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
-                "zendframework/zend-uri": "^2.5"
-            },
-            "suggest": {
-                "zendframework/zend-crypt": "Zend\\Crypt component, for encryption filters",
-                "zendframework/zend-i18n": "Zend\\I18n component for filters depending on i18n functionality",
-                "zendframework/zend-servicemanager": "Zend\\ServiceManager component, for using the filter chain functionality",
-                "zendframework/zend-uri": "Zend\\Uri component, for the UriNormalize filter"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev",
-                    "dev-develop": "2.8-dev"
-                },
-                "zf": {
-                    "component": "Zend\\Filter",
-                    "config-provider": "Zend\\Filter\\ConfigProvider"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Filter\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "provides a set of commonly needed data filters",
-            "homepage": "https://github.com/zendframework/zend-filter",
-            "keywords": [
-                "filter",
-                "zf2"
-            ],
-            "time": "2017-05-17T20:56:17+00:00"
-        },
-        {
             "name": "zendframework/zend-form",
             "version": "2.11.0",
             "source": {
@@ -6201,153 +6802,6 @@
             "time": "2017-05-17T17:00:12+00:00"
         },
         {
-            "name": "zendframework/zend-inputfilter",
-            "version": "2.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-inputfilter.git",
-                "reference": "55d1430db559e9781b147e73c2c0ce6635d8efe2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-inputfilter/zipball/55d1430db559e9781b147e73c2c0ce6635d8efe2",
-                "reference": "55d1430db559e9781b147e73c2c0ce6635d8efe2",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "zendframework/zend-filter": "^2.6",
-                "zendframework/zend-servicemanager": "^2.7.10 || ^3.3.1",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0",
-                "zendframework/zend-validator": "^2.10.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7.23 || ^6.4.3",
-                "zendframework/zend-coding-standard": "~1.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.8.x-dev",
-                    "dev-develop": "2.9.x-dev"
-                },
-                "zf": {
-                    "component": "Zend\\InputFilter",
-                    "config-provider": "Zend\\InputFilter\\ConfigProvider"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\InputFilter\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Normalize and validate input sets from the web, APIs, the CLI, and more, including files",
-            "keywords": [
-                "ZendFramework",
-                "inputfilter",
-                "zf"
-            ],
-            "time": "2018-01-22T19:41:18+00:00"
-        },
-        {
-            "name": "zendframework/zend-json",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-json.git",
-                "reference": "4dd940e8e6f32f1d36ea6b0677ea57c540c7c19c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-json/zipball/4dd940e8e6f32f1d36ea6b0677ea57c540c7c19c",
-                "reference": "4dd940e8e6f32f1d36ea6b0677ea57c540c7c19c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7.23 || ^6.4.3",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
-            },
-            "suggest": {
-                "zendframework/zend-json-server": "For implementing JSON-RPC servers",
-                "zendframework/zend-xml2json": "For converting XML documents to JSON"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1.x-dev",
-                    "dev-develop": "3.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Json\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "provides convenience methods for serializing native PHP to JSON and decoding JSON to native PHP",
-            "keywords": [
-                "ZendFramework",
-                "json",
-                "zf"
-            ],
-            "time": "2018-01-04T17:51:34+00:00"
-        },
-        {
-            "name": "zendframework/zend-loader",
-            "version": "2.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-loader.git",
-                "reference": "c5fd2f071bde071f4363def7dea8dec7393e135c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-loader/zipball/c5fd2f071bde071f4363def7dea8dec7393e135c",
-                "reference": "c5fd2f071bde071f4363def7dea8dec7393e135c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.23"
-            },
-            "require-dev": {
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5-dev",
-                    "dev-develop": "2.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Loader\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "homepage": "https://github.com/zendframework/zend-loader",
-            "keywords": [
-                "loader",
-                "zf2"
-            ],
-            "time": "2015-06-03T14:05:47+00:00"
-        },
-        {
             "name": "zendframework/zend-log",
             "version": "2.9.2",
             "source": {
@@ -6467,66 +6921,6 @@
                 "zf2"
             ],
             "time": "2016-04-28T17:37:42+00:00"
-        },
-        {
-            "name": "zendframework/zend-modulemanager",
-            "version": "2.8.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-modulemanager.git",
-                "reference": "394df6e12248ac430a312d4693f793ee7120baa6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-modulemanager/zipball/394df6e12248ac430a312d4693f793ee7120baa6",
-                "reference": "394df6e12248ac430a312d4693f793ee7120baa6",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0",
-                "zendframework/zend-config": "^3.1 || ^2.6",
-                "zendframework/zend-eventmanager": "^3.2 || ^2.6.3",
-                "zendframework/zend-stdlib": "^3.1 || ^2.7"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-console": "^2.6",
-                "zendframework/zend-di": "^2.6",
-                "zendframework/zend-loader": "^2.5",
-                "zendframework/zend-mvc": "^3.0 || ^2.7",
-                "zendframework/zend-servicemanager": "^3.0.3 || ^2.7.5"
-            },
-            "suggest": {
-                "zendframework/zend-console": "Zend\\Console component",
-                "zendframework/zend-loader": "Zend\\Loader component if you are not using Composer autoloading for your modules",
-                "zendframework/zend-mvc": "Zend\\Mvc component",
-                "zendframework/zend-servicemanager": "Zend\\ServiceManager component"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev",
-                    "dev-develop": "2.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\ModuleManager\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Modular application system for zend-mvc applications",
-            "homepage": "https://github.com/zendframework/zend-modulemanager",
-            "keywords": [
-                "ZendFramework",
-                "modulemanager",
-                "zf"
-            ],
-            "time": "2017-12-02T06:11:18+00:00"
         },
         {
             "name": "zendframework/zend-mvc",
@@ -7105,74 +7499,6 @@
             "time": "2016-05-31T20:47:48+00:00"
         },
         {
-            "name": "zendframework/zend-servicemanager",
-            "version": "3.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-servicemanager.git",
-                "reference": "9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-servicemanager/zipball/9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42",
-                "reference": "9f35a104b8d4d3b32da5f4a3b6efc0dd62e5af42",
-                "shasum": ""
-            },
-            "require": {
-                "container-interop/container-interop": "^1.2",
-                "php": "^5.6 || ^7.0",
-                "psr/container": "^1.0",
-                "zendframework/zend-stdlib": "^3.1"
-            },
-            "provide": {
-                "container-interop/container-interop-implementation": "^1.2",
-                "psr/container-implementation": "^1.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "^1.6.5",
-                "ocramius/proxy-manager": "^1.0 || ^2.0",
-                "phpbench/phpbench": "^0.13.0",
-                "phpunit/phpunit": "^5.7.25 || ^6.4.4",
-                "zendframework/zend-coding-standard": "~1.0.0"
-            },
-            "suggest": {
-                "ocramius/proxy-manager": "ProxyManager 1.* to handle lazy initialization of services",
-                "zendframework/zend-stdlib": "zend-stdlib ^2.5 if you wish to use the MergeReplaceKey or MergeRemoveKey features in Config instances"
-            },
-            "bin": [
-                "bin/generate-deps-for-config-factory",
-                "bin/generate-factory-for-class"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev",
-                    "dev-develop": "4.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\ServiceManager\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Factory-Driven Dependency Injection Container",
-            "keywords": [
-                "PSR-11",
-                "ZendFramework",
-                "dependency-injection",
-                "di",
-                "dic",
-                "service-manager",
-                "servicemanager",
-                "zf"
-            ],
-            "time": "2018-01-29T16:48:37+00:00"
-        },
-        {
             "name": "zendframework/zend-session",
             "version": "2.8.5",
             "source": {
@@ -7238,51 +7564,6 @@
                 "zf"
             ],
             "time": "2018-02-22T16:33:54+00:00"
-        },
-        {
-            "name": "zendframework/zend-stdlib",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-stdlib.git",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stdlib/zipball/debedcfc373a293f9250cc9aa03cf121428c8e78",
-                "reference": "debedcfc373a293f9250cc9aa03cf121428c8e78",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6 || ^7.0"
-            },
-            "require-dev": {
-                "athletic/athletic": "~0.1",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "^2.6.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev",
-                    "dev-develop": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Stdlib\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "homepage": "https://github.com/zendframework/zend-stdlib",
-            "keywords": [
-                "stdlib",
-                "zf2"
-            ],
-            "time": "2016-09-13T14:38:50+00:00"
         },
         {
             "name": "zendframework/zend-test",
@@ -7400,77 +7681,6 @@
                 "zf2"
             ],
             "time": "2016-02-17T22:38:51+00:00"
-        },
-        {
-            "name": "zendframework/zend-validator",
-            "version": "2.10.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zendframework/zend-validator.git",
-                "reference": "38109ed7d8e46cfa71bccbe7e6ca80cdd035f8c9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/38109ed7d8e46cfa71bccbe7e6ca80cdd035f8c9",
-                "reference": "38109ed7d8e46cfa71bccbe7e6ca80cdd035f8c9",
-                "shasum": ""
-            },
-            "require": {
-                "container-interop/container-interop": "^1.1",
-                "php": "^5.6 || ^7.0",
-                "zendframework/zend-stdlib": "^2.7.6 || ^3.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
-                "zendframework/zend-cache": "^2.6.1",
-                "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-config": "^2.6",
-                "zendframework/zend-db": "^2.7",
-                "zendframework/zend-filter": "^2.6",
-                "zendframework/zend-http": "^2.5.4",
-                "zendframework/zend-i18n": "^2.6",
-                "zendframework/zend-math": "^2.6",
-                "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3",
-                "zendframework/zend-session": "^2.8",
-                "zendframework/zend-uri": "^2.5"
-            },
-            "suggest": {
-                "zendframework/zend-db": "Zend\\Db component, required by the (No)RecordExists validator",
-                "zendframework/zend-filter": "Zend\\Filter component, required by the Digits validator",
-                "zendframework/zend-i18n": "Zend\\I18n component to allow translation of validation error messages",
-                "zendframework/zend-i18n-resources": "Translations of validator messages",
-                "zendframework/zend-math": "Zend\\Math component, required by the Csrf validator",
-                "zendframework/zend-servicemanager": "Zend\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
-                "zendframework/zend-session": "Zend\\Session component, ^2.8; required by the Csrf validator",
-                "zendframework/zend-uri": "Zend\\Uri component, required by the Uri and Sitemap\\Loc validators"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.10.x-dev",
-                    "dev-develop": "2.11.x-dev"
-                },
-                "zf": {
-                    "component": "Zend\\Validator",
-                    "config-provider": "Zend\\Validator\\ConfigProvider"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zend\\Validator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "provides a set of commonly needed validators",
-            "homepage": "https://github.com/zendframework/zend-validator",
-            "keywords": [
-                "validator",
-                "zf2"
-            ],
-            "time": "2018-02-01T17:05:33+00:00"
         },
         {
             "name": "zendframework/zend-view",

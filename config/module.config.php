@@ -6,8 +6,8 @@
 
 namespace MSBios\Media\CPanel\Doctrine;
 
+use Zend\Router\Http\Method;
 use Zend\Router\Http\Segment;
-use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
 
@@ -29,6 +29,25 @@ return [
                             ]
                         ]
                     ],
+                    'news-image' => [
+                        'type' => Segment::class,
+                        'options' => [
+                            'route' => 'news/image[/]',
+                            'defaults' => [
+                                'controller' => Controller\NewsController::class,
+                                'action' => 'image',
+                            ],
+                        ],
+                        'may_terminate' => true,
+                        'child_routes' => [
+                            [
+                                'type' => Method::class,
+                                'options' => [
+                                    'verb' => 'post'
+                                ]
+                            ]
+                        ]
+                    ],
                 ],
             ],
         ],
@@ -37,7 +56,7 @@ return [
     'controllers' => [
         'factories' => [
             Controller\NewsController::class =>
-                InvokableFactory::class
+                Factory\NewsControllerFactory::class
         ]
     ],
 
@@ -69,6 +88,21 @@ return [
             Controller\NewsController::class =>
                 \MSBios\Media\Resource\Doctrine\Form\NewsForm::class
         ]
+    ],
+
+    'filters' => [
+        'factories' => [
+            Filter\NewsImageChain::class =>
+                Factory\NewsImageChainFactory::class
+        ]
+    ],
+
+    \MSBios\Assetic\Module::class => [
+        'maps' => [
+            // css
+            'limitless/msbios.media.cpanel.js' =>
+                __DIR__ . '/../themes/limitless/public/msbios.media.cpanel.js',
+        ],
     ],
 
     \MSBios\Theme\Module::class => [

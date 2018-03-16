@@ -20,7 +20,7 @@ $this->headScript()
 //    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/toolbar.js'))
 //    ->prependFile($this->basePath('limitless/assets/js/plugins/editors/wysihtml5/wysihtml5.min.js'))
     ->prependFile($this->basePath('limitless/ckeditor/ckeditor.js'))
-//    ->prependFile($this->basePath('cpanel/openpower.cpanel.js'))
+    ->prependFile($this->basePath('limitless/msbios.media.cpanel.js'))//    ->prependFile($this->basePath('cpanel/openpower.cpanel.js'))
 ;
 
 /** @var \Zend\Form\Form $form */
@@ -44,6 +44,15 @@ $form->prepare();
                         'placeholder' => $this->translate('Enter news title')
                     ]),
                 'label' => $this->translate('Title')
+            ]); ?>
+
+            <?= $this->partial('partial/element.phtml', [
+                'element' => $form->get('type')
+                    ->setAttributes([
+                        'required' => 'required',
+                        'placeholder' => $this->translate('Select news type')
+                    ]),
+                'label' => $this->translate('Type')
             ]); ?>
 
             <?= $this->partial('partial/element.phtml', [
@@ -73,10 +82,80 @@ $form->prepare();
                 'label' => $this->translate('State')
             ]); ?>
 
+            <?php $options = $form->get('options'); ?>
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="">
+                    Options:
+                </label>
+                <div class="col-md-10">
+                    <div id="ms-media-news-image" class="row">
+
+                        <?php foreach ($options->get('images') as $i => $image): ?>
+                            <div class="col-md-2 ms-image-item" data-item-index="<?= $i; ?>">
+                                <div class="thumbnail">
+                                    <div class="thumb">
+                                        <img src="http://via.placeholder.com/360x270">
+                                        <div class="caption-overflow">
+                                            <span>
+                                                <a href="#"
+                                                   class="btn border-white text-white btn-flat btn-icon btn-rounded ms-change">
+                                                    <i class="icon-pencil" data-index="<?= $i; ?>"></i>
+                                                </a>
+                                                <a href="#"
+                                                   class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5 ms-remove">
+                                                    <i class="icon-trash" data-index="<?= $i; ?>"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="caption"></div>
+                                </div>
+                                <?= $this->formElement($image->get('name')); ?>
+                                <?= $this->formElement($image->get('type')); ?>
+                                <?= $this->formElement($image->get('width')); ?>
+                                <?= $this->formElement($image->get('height')); ?>
+                                <?= $this->formElement($image->get('src')); ?>
+                                <?= $this->formElement($image->get('size')); ?>
+                                <?= $this->formElement($image->get('error')); ?>
+                                <?php $thumb = $image->get('thumb'); ?>
+                                <?= $this->formElement($thumb->get('width')); ?>
+                                <?= $this->formElement($thumb->get('height')); ?>
+                                <?= $this->formElement($thumb->get('src')); ?>
+                            </div>
+                        <?php endforeach; ?>
+
+                        <div class="col-md-2 ms-image-item-add">
+                            <div class="thumbnail">
+                                <div class="thumb">
+                                    <img src="http://via.placeholder.com/360x270?text=+">
+                                    <div class="caption-overflow">
+                                        <span>
+                                            <a href="#"
+                                               class="btn border-white text-white btn-flat btn-icon btn-rounded ms-add">
+                                                <i class="icon-plus3" data-index=""></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <?= $this->formElement($options->get('video')->get('src')->setAttribute('class', 'form-control'));?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="text-right">
-                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="reset" class="btn btn-default"><?= $this->translate('Reset'); ?></button>
                 <button type="submit" class="btn btn-primary">
-                    Submit
+                    <?= $this->translate('Submit'); ?>
                     <i class="icon-arrow-right14 position-right"></i>
                 </button>
             </div>
@@ -85,10 +164,42 @@ $form->prepare();
         </div>
     </div>
 
+<script id="ms-media-news-image-tmpl" type="text/x-jquery-tmpl">
+    <div class="col-md-2 ms-image-item" data-item-index="__INDEX__">
+        <div class="thumbnail">
+            <div class="thumb">
+                <img src="#">
+                <div class="caption-overflow">
+                    <span>
+                        <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ms-change">
+                            <i class="icon-pencil" data-index="__INDEX__"></i>
+                        </a>
+                        <a href="#" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5 ms-remove">
+                            <i class="icon-trash" data-index="__INDEX__"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="caption"></div>
+        </div>
+        <input type="hidden" name="options[images][__INDEX__][name]">
+        <input type="hidden" name="options[images][__INDEX__][type]">
+        <input type="hidden" name="options[images][__INDEX__][width]">
+        <input type="hidden" name="options[images][__INDEX__][height]">
+        <input type="hidden" name="options[images][__INDEX__][src]">
+        <input type="hidden" name="options[images][__INDEX__][size]">
+        <input type="hidden" name="options[images][__INDEX__][error]">
+        <input type="hidden" name="options[images][__INDEX__][thumb][width]">
+        <input type="hidden" name="options[images][__INDEX__][thumb][height]">
+        <input type="hidden" name="options[images][__INDEX__][thumb][src]">
+    </div>
+</script>
 
 <?php $this->inlineScript()->captureStart(); ?>
-    $('[name="postdate"]').formatter({
-        pattern: '{{9999}}-{{99}}-{{99}}'
+    MSBiosMediaCPanel.initNewsForm({
+        image: {
+            url: '<?= $this->url('cpanel/news-image'); ?>'
+        }
     });
 
     CKEDITOR.replace('content', {
