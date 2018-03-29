@@ -75,6 +75,7 @@ $this->headScript()
                         <tr>
                             <th><?= $this->translate('Title'); ?></th>
                             <th class="text-center"><?= $this->translate('Type'); ?></th>
+                            <th class="text-center"><?= $this->translate('State'); ?></th>
                             <th><?= $this->translate('Postdate'); ?></th>
                             <th><?= $this->translate('Creator'); ?></th>
                             <th><?= $this->translate('Created At'); ?></th>
@@ -91,7 +92,12 @@ $this->headScript()
                                 <td><?= $this->truncate($this->escapeHtml($item->getTitle()), 125); ?></td>
                                 <td class="text-center">
                                     <span class="label label-success">
-                                        <?= $this->escapeHtml($item->getType()); ?>
+                                        <?= $item->getType(); ?>
+                                    </span>
+                                </td>
+                                <td class="text-center">
+                                    <span class="label label-success">
+                                        <?= $item->getState(); ?>
                                     </span>
                                 </td>
                                 <td>
