@@ -62,12 +62,6 @@ return [
 
     'navigation' => [
         \MSBios\CPanel\Navigation\Sidebar::class => [
-            'dashboard' => [
-                'label' => _('Dashboard'),
-                'route' => 'cpanel',
-                'class' => 'icon-home',
-                'order' => 100
-            ],
             'content' => [
                 'label' => _('Content'),
                 'uri' => '#',

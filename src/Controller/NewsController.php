@@ -6,15 +6,14 @@
 
 namespace MSBios\Media\CPanel\Doctrine\Controller;
 
-use Doctrine\ORM\QueryBuilder;
+use Doctrine\Common\Persistence\ObjectManager;
 use MSBios\CPanel\Doctrine\Mvc\Controller\AbstractActionController;
 use MSBios\Media\CPanel\Doctrine\Filter\NewsImageChain;
 use MSBios\Media\Resource\Doctrine\Entity\News;
-use MSBios\View\Model\ViewModel;
 use Zend\Filter\FilterInterface;
 use Zend\Filter\FilterPluginManager;
+use Zend\Form\FormInterface;
 use Zend\View\Model\JsonModel;
-use Zend\View\Model\ModelInterface;
 
 /**
  * Class NewsController
@@ -27,34 +26,27 @@ class NewsController extends AbstractActionController
 
     /**
      * NewsController constructor.
+     * @param ObjectManager $dem
+     * @param FormInterface $form
      * @param FilterPluginManager $filterPluginManager
      */
-    public function __construct(FilterPluginManager $filterPluginManager)
+    public function __construct(ObjectManager $dem, FormInterface $form, FilterPluginManager $filterPluginManager)
     {
+        parent::__construct($dem, $form);
         $this->filterPluginManager = $filterPluginManager;
-        $this->setObjectPrototype(new News);
     }
 
     /**
-     * @override
-     *
-     * @param string $alias
-     * @return QueryBuilder
-     */
-    protected function getQueryBuilder($alias = 'resource')
-    {
-        /** @var QueryBuilder $qb */
-        return parent::getQueryBuilder($alias)
-            ->orderBy('resource.postdate', 'DESC');
-    }
-
-    /**
-     * @return JsonModel
+     * @return void|JsonModel
      */
     public function imageAction()
     {
         /** @var \Zend\Http\Request $request */
         $request = $this->getRequest();
+
+        if (! $request->isPost()) {
+            return;
+        }
 
         /** @var array $data */
         $data = array_merge_recursive(
@@ -63,7 +55,8 @@ class NewsController extends AbstractActionController
         );
 
         /** @var FilterInterface $imageFilterChain */
-        $imageFilterChain = $this->filterPluginManager->get(NewsImageChain::class);
+        $imageFilterChain = $this->filterPluginManager
+            ->get(NewsImageChain::class);
 
         /** @var array $data */
         $data = $imageFilterChain->filter($data['attachment']);
@@ -71,5 +64,23 @@ class NewsController extends AbstractActionController
         $data['thumb']['tmp_name'] = substr($data['thumb']['tmp_name'], strlen('./public'));
 
         return new JsonModel($data);
+    }
+
+    /**
+     * @return mixed|News
+     */
+    protected static function factory()
+    {
+        return new News;
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @return string
+     */
+    public function getResourceId()
+    {
+        return self::class;
     }
 }

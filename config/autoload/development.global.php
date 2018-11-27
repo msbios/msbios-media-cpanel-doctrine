@@ -28,21 +28,9 @@ return [
         ],
     ],
 
-    'controllers' => [
-        'aliases' => [
-            // ...
-        ]
-    ],
-
     \MSBios\Assetic\Module::class => [
         'paths' => [
             __DIR__ . '/../../vendor/msbios/application/themes/default/public/',
-        ],
-    ],
-
-    'view_manager' => [
-        'template_path_stack' => [
-            __DIR__ . '/../../vendor/msbios/media-doctrine/view',
         ],
     ],
 ];
