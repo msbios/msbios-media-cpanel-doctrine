@@ -19,6 +19,8 @@ use Zend\ServiceManager\Factory\FactoryInterface;
 class NewsImageChainFactory implements FactoryInterface
 {
     /**
+     * @inheritdoc
+     *
      * @param ContainerInterface $container
      * @param string $requestedName
      * @param array|null $options

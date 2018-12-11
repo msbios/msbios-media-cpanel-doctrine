@@ -18,6 +18,8 @@ use Zend\ServiceManager\Factory\FactoryInterface;
 class NewsControllerFactory implements FactoryInterface
 {
     /**
+     * @inheritdoc
+     *
      * @param ContainerInterface $container
      * @param string $requestedName
      * @param array|null $options
