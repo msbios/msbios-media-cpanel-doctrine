@@ -6,6 +6,8 @@
 
 namespace MSBios\Media\CPanel\Doctrine;
 
+use MSBios\Media\Doctrine\Controller\NewsController;
+
 return [
 
     'doctrine' => [
@@ -28,9 +30,22 @@ return [
         ],
     ],
 
+    'controllers' => [
+        'aliases' => [
+            \MSBios\Application\Controller\IndexController::class =>
+                NewsController::class
+        ]
+    ],
+
     \MSBios\Assetic\Module::class => [
         'paths' => [
             __DIR__ . '/../../vendor/msbios/application/themes/default/public/',
+        ],
+    ],
+
+    'view_manager' => [
+        'template_path_stack' => [
+            __DIR__ . '/../../vendor/msbios/media-doctrine/view',
         ],
     ],
 ];

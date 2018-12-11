@@ -8,6 +8,7 @@ namespace MSBios\Media\CPanel\Doctrine\Factory;
 use Doctrine\ORM\EntityManager;
 use Interop\Container\ContainerInterface;
 use MSBios\Media\CPanel\Doctrine\Controller\NewsController;
+use MSBios\Media\Resource\Doctrine\Form\NewsForm;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
 /**
@@ -26,7 +27,7 @@ class NewsControllerFactory implements FactoryInterface
     {
         return new NewsController(
             $container->get(EntityManager::class),
-            $container->get('FormElementManager')->get($requestedName),
+            $container->get('FormElementManager')->get(NewsForm::class),
             $container->get('FilterManager')
         );
     }
