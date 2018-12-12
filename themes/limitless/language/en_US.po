@@ -1,74 +1,116 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MSBios CMS by Judzhin Miles\n"
-"POT-Creation-Date: 2017-05-03 16:16+0300\n"
-"PO-Revision-Date: 2017-05-03 16:17+0300\n"
+"POT-Creation-Date: 2018-12-12 13:06+0200\n"
+"PO-Revision-Date: 2018-12-12 13:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: MSBios Team <info@msbios.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../view\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: _;translate;addSuccessMessage\n"
-"X-Poedit-SearchPath-0: config\n"
-"X-Poedit-SearchPath-1: src\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: config/module.config.php:212
-msgid "Resources"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:44
+msgid "Enter news title"
 msgstr ""
 
-#: config/module.config.php:215
-msgid "Roles"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:46
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:82
+msgid "Title"
 msgstr ""
 
-#: config/module.config.php:222
-msgid "System"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:53
+msgid "Select news type"
 msgstr ""
 
-#: config/module.config.php:227
-msgid "Setting"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:55
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:83
+msgid "Type"
 msgstr ""
 
-#: config/module.config.php:230
-msgid "Layouts"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:62
+msgid "Enter news content"
 msgstr ""
 
-#: config/module.config.php:233
-msgid "Modules"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:64
+msgid "Content"
 msgstr ""
 
-#: config/module.config.php:236
-msgid "Page Types"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:71
+msgid "Choose news postdate"
 msgstr ""
 
-#: config/module.config.php:239
-msgid "Routes"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:73
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:85
+msgid "Postdate"
 msgstr ""
 
-#: config/module.config.php:242
-msgid "Themes"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:80
+msgid "Select news state"
 msgstr ""
 
-#: config/module.config.php:245
-msgid "Widgets"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:82
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:84
+msgid "State"
 msgstr ""
 
-#: src/Mvc/Controller/AbstractActionController.php:83
-msgid "Entities has been removed"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:156
+msgid "Reset"
 msgstr ""
 
-#: src/Mvc/Controller/AbstractActionController.php:157
-msgid "Entity has been create"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:158
+msgid "Submit"
 msgstr ""
 
-#: src/Mvc/Controller/AbstractActionController.php:221
-msgid "Entity has been update"
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:21
+msgid "Information message"
 msgstr ""
 
-#: src/Mvc/Controller/AbstractActionController.php:260
-msgid "Entity has been removed"
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:22
+msgid ""
+"The database is not created at the moment no news, click \"Create new news\" "
+"to start working with the news."
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:26
+msgid "Create news"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:47
+msgid "Search..."
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:61
+msgid "Create new news"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:70
+msgid "Information about the search result"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:71
+msgid ""
+"Nothing was found on the search criteria, try changing the search criteria."
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:74
+msgid "Back to homepage"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:86
+msgid "Creator"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:87
+msgid "Created At"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:89
+msgid "Actions"
 msgstr ""

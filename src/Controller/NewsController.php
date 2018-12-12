@@ -44,16 +44,14 @@ class NewsController extends AbstractActionController
     public function __invoke(QueryBuilder $queryBuilder)
     {
 
-        if ($this->search->isValid())
-        {
+        if ($this->search->isValid()) {
             /** @var array $data */
             $data = $this->search->getData();
 
-            if (!empty($data['q'])) {
+            if (! empty($data['q'])) {
                 $queryBuilder->where($queryBuilder->expr()->like('n.title', ':name'))
                 ->setParameter('name', "{$data['q']}%");
             }
-
         }
 
         return new QueryBuilderPaginator($queryBuilder);

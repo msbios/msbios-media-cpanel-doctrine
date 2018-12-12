@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MSBios CMS by Judzhin Miles\n"
-"POT-Creation-Date: 2017-08-22 11:05+0300\n"
-"PO-Revision-Date: 2017-08-22 11:12+0300\n"
+"POT-Creation-Date: 2018-12-12 13:04+0200\n"
+"PO-Revision-Date: 2018-12-12 13:05+0200\n"
 "Last-Translator: \n"
 "Language-Team: MSBios Team <info@msbios.com>\n"
 "Language: ru_RU\n"
@@ -10,213 +10,165 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.7\n"
-"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-Basepath: ../view\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: _;translate;addSuccessMessage\n"
-"X-Poedit-SearchPath-0: themes/limitless/view\n"
-"X-Poedit-SearchPath-1: src\n"
-"X-Poedit-SearchPath-2: config\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: config/module.config.php:182
-msgid "Dashboard"
-msgstr "Панель управления"
-
-#: config/module.config.php:188
-msgid "System"
-msgstr "Система"
-
-#: config/module.config.php:194
-msgid "Layouts"
-msgstr "Макеты"
-
-#: config/module.config.php:197
-msgid "Modules"
-msgstr "Модули"
-
-#: config/module.config.php:200
-msgid "Page Types"
-msgstr "Типы страниц"
-
-#: config/module.config.php:203
-msgid "Routes"
-msgstr "Маршруты"
-
-#: config/module.config.php:206
-msgid "Setting"
-msgstr "Настройки"
-
-#: config/module.config.php:209
-msgid "Themes"
-msgstr "Темы"
-
-#: config/module.config.php:212
-msgid "Widgets"
-msgstr "Виджеты"
-
-#: src/Mvc/Controller/AbstractLazyActionController.php:65
-msgid "Entities has been removed"
-msgstr "Сущности были удалены"
-
-#: src/Mvc/Controller/AbstractLazyActionController.php:136
-msgid "Entity has been create"
-msgstr "Сущность была создана"
-
-#: src/Mvc/Controller/AbstractLazyActionController.php:199
-msgid "Entity has been update"
-msgstr "Сущность была обновлена"
-
-#: src/Mvc/Controller/AbstractLazyActionController.php:236
-msgid "Entity has been removed"
-msgstr "Сущность была удалена"
-
-#: themes/limitless/view/layout/layout.phtml:15
-msgid "MSBios CMS by Judzhin Miles"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:44
+msgid "Enter news title"
 msgstr ""
 
-#: themes/limitless/view/layout/layout.phtml:212
-msgid "Success!"
-msgstr "Успешно"
-
-#: themes/limitless/view/layout/layout.phtml:225
-msgid "Warning!"
-msgstr "Предупреждение!"
-
-#: themes/limitless/view/ms-bios/c-panel/layout/form.phtml:26
-#: themes/limitless/view/ms-bios/c-panel/page-type/form.phtml:52
-#: themes/limitless/view/ms-bios/c-panel/route/form.phtml:52
-msgid "Enter layout title"
-msgstr "Введите название макета"
-
-#: themes/limitless/view/ms-bios/c-panel/layout/form.phtml:28
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:73
-#: themes/limitless/view/ms-bios/c-panel/module/form.phtml:54
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:91
-#: themes/limitless/view/ms-bios/c-panel/page-type/form.phtml:54
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:91
-#: themes/limitless/view/ms-bios/c-panel/route/form.phtml:54
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:91
-#: themes/limitless/view/ms-bios/c-panel/theme/form.phtml:54
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:89
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:46
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:82
 msgid "Title"
 msgstr "Заглавие"
 
-#: themes/limitless/view/ms-bios/c-panel/layout/form.phtml:35
-#: themes/limitless/view/ms-bios/c-panel/page-type/form.phtml:61
-#: themes/limitless/view/ms-bios/c-panel/route/form.phtml:61
-msgid "Enter layout identifier"
-msgstr "Введите идентификатор макета"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:53
+msgid "Select news type"
+msgstr ""
 
-#: themes/limitless/view/ms-bios/c-panel/layout/form.phtml:37
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:74
-#: themes/limitless/view/ms-bios/c-panel/page-type/form.phtml:63
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:92
-#: themes/limitless/view/ms-bios/c-panel/route/form.phtml:63
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:92
-#: themes/limitless/view/ms-bios/c-panel/theme/form.phtml:63
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:90
-msgid "Template"
-msgstr "Шаблон"
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:55
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:83
+msgid "Type"
+msgstr "Тип"
 
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:21
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:48
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:48
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:48
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:46
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:62
+msgid "Enter news content"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:64
+msgid "Content"
+msgstr "Содержимое"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:71
+msgid "Choose news postdate"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:73
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:85
+msgid "Postdate"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:80
+msgid "Select news state"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:82
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:84
+msgid "State"
+msgstr "Стан"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:156
+msgid "Reset"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:158
+msgid "Submit"
+msgstr "Отправить"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:21
 msgid "Information message"
 msgstr "Информационное сообщение"
 
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:22
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:49
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:49
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:49
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:47
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:22
 msgid ""
-"The database is not created at the moment no layout, click \"Add new entity"
-"\" to start working with the layout."
+"The database is not created at the moment no news, click \"Create new news\" "
+"to start working with the news."
 msgstr ""
 
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:25
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:50
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:60
-msgid "Create new layout"
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:26
+msgid "Create news"
 msgstr ""
 
-#: themes/limitless/view/ms-bios/c-panel/layout/index.phtml:76
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:94
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:94
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:94
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:92
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:47
+msgid "Search..."
+msgstr "Поиск…"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:61
+msgid "Create new news"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:70
+msgid "Information about the search result"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:71
+msgid ""
+"Nothing was found on the search criteria, try changing the search criteria."
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:74
+msgid "Back to homepage"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:86
+msgid "Creator"
+msgstr ""
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:87
+msgid "Created At"
+msgstr "Создано в"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:89
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
-#: themes/limitless/view/ms-bios/c-panel/module/form.phtml:52
-msgid "Enter module title"
-msgstr ""
+#~ msgid "Dashboard"
+#~ msgstr "Панель управления"
 
-#: themes/limitless/view/ms-bios/c-panel/module/form.phtml:61
-msgid "Enter module identifier"
-msgstr ""
+#~ msgid "System"
+#~ msgstr "Система"
 
-#: themes/limitless/view/ms-bios/c-panel/module/form.phtml:63
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:92
-msgid "Module"
-msgstr ""
+#~ msgid "Layouts"
+#~ msgstr "Макеты"
 
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:26
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:52
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:26
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:52
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:26
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:52
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:24
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:50
-msgid "Add new record"
-msgstr ""
+#~ msgid "Modules"
+#~ msgstr "Модули"
 
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:30
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:30
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:30
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:28
-msgid "Remove selected records"
-msgstr ""
+#~ msgid "Page Types"
+#~ msgstr "Типы страниц"
 
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:68
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:68
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:68
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:66
-msgid "Are you sure?"
-msgstr ""
+#~ msgid "Routes"
+#~ msgstr "Маршруты"
 
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:71
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:71
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:71
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:69
-msgid "Do you want to delete records?"
-msgstr ""
+#~ msgid "Setting"
+#~ msgstr "Настройки"
 
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:75
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:75
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:75
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:73
-msgid "Cancel"
-msgstr ""
+#~ msgid "Themes"
+#~ msgstr "Темы"
 
-#: themes/limitless/view/ms-bios/c-panel/module/index.phtml:78
-#: themes/limitless/view/ms-bios/c-panel/page-type/index.phtml:78
-#: themes/limitless/view/ms-bios/c-panel/route/index.phtml:78
-#: themes/limitless/view/ms-bios/c-panel/theme/index.phtml:76
-msgid "Yes, delete them!"
-msgstr ""
+#~ msgid "Widgets"
+#~ msgstr "Виджеты"
 
-#: themes/limitless/view/ms-bios/c-panel/theme/form.phtml:52
-msgid "Enter theme title"
-msgstr ""
+#~ msgid "Entities has been removed"
+#~ msgstr "Сущности были удалены"
 
-#: themes/limitless/view/ms-bios/c-panel/theme/form.phtml:61
-msgid "Enter template identifier"
-msgstr ""
+#~ msgid "Entity has been create"
+#~ msgstr "Сущность была создана"
+
+#~ msgid "Entity has been update"
+#~ msgstr "Сущность была обновлена"
+
+#~ msgid "Entity has been removed"
+#~ msgstr "Сущность была удалена"
+
+#~ msgid "Success!"
+#~ msgstr "Успешно"
+
+#~ msgid "Warning!"
+#~ msgstr "Предупреждение!"
+
+#~ msgid "Enter layout title"
+#~ msgstr "Введите название макета"
+
+#~ msgid "Enter layout identifier"
+#~ msgstr "Введите идентификатор макета"
+
+#~ msgid "Template"
+#~ msgstr "Шаблон"
 
 #~ msgid "File manager"
 #~ msgstr "Файловый менеджер"
