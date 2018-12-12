@@ -40,10 +40,10 @@ class NewsController extends AbstractActionController
 
     /**
      * @param QueryBuilder $queryBuilder
+     * @return QueryBuilderPaginator
      */
     public function __invoke(QueryBuilder $queryBuilder)
     {
-
         if ($this->search->isValid()) {
             /** @var array $data */
             $data = $this->search->getData();
@@ -53,7 +53,6 @@ class NewsController extends AbstractActionController
                 ->setParameter('name', "{$data['q']}%");
             }
         }
-
         return new QueryBuilderPaginator($queryBuilder);
     }
 
