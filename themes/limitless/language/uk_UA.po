@@ -1,0 +1,126 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-12-12 12:57+0200\n"
+"PO-Revision-Date: 2018-12-12 12:58+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../view\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:44
+msgid "Enter news title"
+msgstr "Введіть назву новин"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:46
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:82
+msgid "Title"
+msgstr "Заголовок"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:53
+msgid "Select news type"
+msgstr "Виберіть тип новин"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:55
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:83
+msgid "Type"
+msgstr "Тип"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:62
+msgid "Enter news content"
+msgstr "Введіть вміст новини"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:64
+msgid "Content"
+msgstr "Вміст"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:71
+msgid "Choose news postdate"
+msgstr "Виберіть дату пуплікації новини"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:73
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:85
+msgid "Postdate"
+msgstr "Дата публікації"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:80
+msgid "Select news state"
+msgstr "Виберіть стан новин"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:82
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:84
+msgid "State"
+msgstr "Стан"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:156
+msgid "Reset"
+msgstr "Скинути"
+
+#: ms-bios/media/c-panel/doctrine/news/form.phtml:158
+msgid "Submit"
+msgstr "Відправити"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:21
+msgid "Information message"
+msgstr "Інформаційне повідомлення"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:22
+msgid ""
+"The database is not created at the moment no news, click \"Create new news\" "
+"to start working with the news."
+msgstr ""
+"В даний час в базі даних не створено жодної новини, натисніть \"Створити "
+"новини\", щоб розпочати роботу з новинами."
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:26
+msgid "Create news"
+msgstr "Створити новину"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:47
+msgid "Search..."
+msgstr "Пошук…"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:61
+msgid "Create new news"
+msgstr "Створити нову новину"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:70
+msgid "Information about the search result"
+msgstr "Інформація про результат пошуку"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:71
+msgid ""
+"Nothing was found on the search criteria, try changing the search criteria."
+msgstr ""
+"Нічого не знайшлося по критерію пошуку, спробуйте змінити критерій пошуку."
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:74
+msgid "Back to homepage"
+msgstr "Повернутися на домашню сторінку"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:86
+msgid "Creator"
+msgstr "Творець"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:87
+msgid "Created At"
+msgstr "Створено в"
+
+#: ms-bios/media/c-panel/doctrine/news/index.phtml:89
+msgid "Actions"
+msgstr "Дії"
+
+#~ msgid ""
+#~ "The database is not created at the moment no consignment, click \"Create "
+#~ "new consignment\" to start working with the consignment."
+#~ msgstr ""
+#~ "База даних не створена на даний момент, немає консигнації, натисніть "
+#~ "\"Створити нову партію\", щоб почати працювати з партією."
