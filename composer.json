@@ -30,6 +30,8 @@
   "require-dev": {
     "msbios/portal-doctrine": "^1.0",
     "msbios/media-doctrine": "^1.0",
+    "msbios/content-resource-doctrine": "^1.0",
+    "msbios/content-cpanel-doctrine": "^1.0",
     "msbios/debug": "^1.0",
     "msbios/test": "^1.0"
   },
@@ -43,9 +45,7 @@
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
     "upload-coverage": "coveralls -v",
     "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
-    "serve": "php -S 0.0.0.0:3107 -t public public/index.php",
-    "serve-ios": "php -S 0.0.0.0:3107 -t public index.php",
-    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push"
+    "serve": "php -S 0.0.0.0:3107 -t public public/index.php"
   },
   "extra": {
     "zf": {

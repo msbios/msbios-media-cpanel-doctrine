@@ -63,15 +63,11 @@ return [
     'navigation' => [
         \MSBios\CPanel\Navigation\Sidebar::class => [
             'content' => [
-                'label' => _('Content'),
-                'uri' => '#',
-                'class' => 'icon-stack-text',
-                'order' => 200,
                 'pages' => [
                     'news' => [
                         'label' => _('News'),
                         'route' => 'cpanel/news',
-                    ],
+                    ]
                 ]
             ]
         ],

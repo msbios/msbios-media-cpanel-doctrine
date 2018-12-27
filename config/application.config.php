@@ -6,6 +6,12 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+        'MSBios\Content\Resource',
+        'MSBios\Content\Resource\Doctrine',
+        'MSBios\Content\CPanel',
+        'MSBios\Content\CPanel\Doctrine',
+        'MSBios\Session',
+        'MSBios\Permissions\Acl',
         'MSBios\Cache',
         'Zend\Serializer',
         'MSBios\Paginator\Doctrine',
